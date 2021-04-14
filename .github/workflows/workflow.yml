@@ -1,5 +1,7 @@
 name: main-workflow
 
+env: {}
+  
 on:
   push:
     branches:
