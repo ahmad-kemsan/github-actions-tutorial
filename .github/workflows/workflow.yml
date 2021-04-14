@@ -1,7 +1,6 @@
 name: main-workflow
 
-
-  
+env: {}
 on:
   push:
     branches:
@@ -21,9 +20,9 @@ jobs:
       - name: Set up Go
         uses: actions/setup-go@v2
         with:
-          go-version: "^1.14" # The Go version to download and use.
-      # - name: Print Go version
-        # run: go version
+          go-version: "1.14.0" # The Go version to download and use.
+      - name: Print Go version
+        run: go version
 
       # Run unit tests.
       # - name: Run unit tests
